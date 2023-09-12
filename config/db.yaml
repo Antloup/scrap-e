@@ -1,0 +1,19 @@
+db_name: 'best_deal_tracker.db'
+CPU:
+  active: off
+  ref: "Intel Core i5 2400"
+  min_value_n: 1.0
+  min_value_u: 1.0
+  min_benef_n: 0.0
+  min_benef_u: 0.0
+GPU:
+  active: on
+  ref: "GeForce GTX 260"
+  min_value_n: 1.0
+  min_value_u: 1.0
+  min_benef_n: 0.0
+  min_benef_u: 0.0
+OTHER:
+  active: off
+  min_value: 1.0
+  min_benef: 30.0

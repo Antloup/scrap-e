@@ -1,0 +1,112 @@
+# EXAMPLES:
+# SCRAPER_NAME:
+#   default:
+#    max_pages: 1
+#    max_price: 350
+#    min_price: -1
+#   searches:
+#     - search: (on|off)? (default on)
+#       category: SCRAPER_CATEGORY_LABEL
+#       search_for: MODEL_CATEGORY_LABEL
+#       keywords:
+#         - 'foo'  # '' for no keywords
+#         - 'bar'
+#       max_pages: 2 (optional, default:default_max_page)
+
+
+ebay:
+  default:
+    max_pages: 1
+    max_price: 350
+    min_price: -1
+    keywords:
+      - ''
+  searches:
+    - search: off
+      category: 'CPU'
+      search_for: 'CPU'
+      keywords:
+        - 'i3'
+        - 'i5'
+      max_pages: 1
+    - search: on
+      category: 'COMPONENT'
+      search_for: 'GPU'
+      keywords:
+        - 'gtx'
+      max_pages: 3
+    - search: off
+      category: 'ACCESSORIES'
+      search_for: 'GPU'
+      keywords:
+        - 'gtx'
+        - 'rx'
+      max_pages: 1
+    - search: off
+      category: 'OTHER'
+      search_for: 'GPU'
+      keywords:
+        - 'gtx'
+        - 'rx'
+      max_pages: 1
+    - search: off
+      category: 'VIDEO_GAMES'
+      search_for: 'GPU'
+      keywords:
+        - 'gtx'
+        - 'rx'
+      max_pages: 1
+    - search: off
+      category: 'PC'
+      search_for: 'OTHER'
+      max_pages: 1
+
+lbc:
+  default:
+    max_pages: 1
+    max_price: 200
+    min_price: -1
+    title_only: on
+    keywords:
+      - ''
+    category: 'OTHER'
+  searches:
+    - search: off
+      search_for: 'CPU'
+      keywords:
+        - 'i5'
+        - 'i3'
+      max_pages: 1
+    - search: off
+      max_pages: 1
+      search_for: 'GPU'
+      keywords:
+        - 'gtx'
+    - search: off
+      max_pages: 1
+      search_for: 'OTHER'
+      keywords:
+        - 'gamer'
+
+paruvendu:
+  default:
+    max_pages: 1
+    max_price: 200
+    min_price: -1
+    title_only: on
+    keywords:
+      - ''
+    category: 'OTHER'
+
+  searches:
+    - search: off
+      max_pages: 1
+      search_for: 'CPU'
+      keywords:
+        - 'i3'
+        - 'i5'
+    - search: off
+      max_pages: 1
+      search_for: 'GPU'
+      keywords:
+        - 'gtx'

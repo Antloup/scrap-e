@@ -1,0 +1,7 @@
+.idea
+__pycache__/
+img_data
+variables.pkl
+ebay.yaml
+misc.ipynb
+best_deal_tracker.db
